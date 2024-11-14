@@ -1,0 +1,56 @@
+.select-player-title {
+    position: absolute;
+    left: 36px;
+    top: 123px;
+    width: 326px;
+    font-size: 24px;
+    font-family: "gilroy-blackItalic";
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-add-player {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    left: 47px;
+    top: 223px;
+    align-items: center;
+}
+
+.input-player {
+    width: 266px;
+    height: 56px;
+    border-radius: 30px;
+    padding-left: 30px;
+    border: 0;
+}
+
+#button-add-player {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 97px;
+    background-color: #181818;
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn-start-game {
+    width: 206px;
+    height: 56px;
+    position: absolute;
+    left: 92px;
+    top: 587px;
+}
+
+#img2 {
+    width: 377px;
+    height: 243.5px;
+    position: absolute;
+    left: 95px;
+    top: 663px;
+}
