@@ -1,20 +1,37 @@
 #img1 {
-    align-items: center;
-    width: 485px;
+    width: 120%;
 }
 
 .homepage-title {
-    color: #ffffff;
-    font-size: 32px;
-    width: 316px;
-    text-transform: uppercase;
     font-family: "gilroy-blackItalic";
+    text-transform: uppercase;
 }
 
-.btn-launch-game {
-    width: 135px;
-    height: 56px;
-    position: absolute;
-    left: 37px;
-    top: 664px;
+@media screen and (max-width: 390px) {
+    .homepage-title {
+        width: 80%;
+        font-size: 8vw;
+    }
+
+    .btn-launch-game {
+        position: relative;
+        left: -19%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .homepage-title {
+        font-size: 32px;
+        width: 316px;
+        position: absolute;
+        left: 37px;
+        top: 510px;
+    }
+
+    .btn-launch-game {
+        position: absolute;
+        left: 37px;
+        top: 664px;
+    }
 }
