@@ -1,41 +1,37 @@
 * {
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 
 html,
 body {
     background-color: #181818;
-    overflow: hidden;
 }
 
 body {
-    width: 390px;
-    height: 844px;
-    margin: 30px auto;
     padding-top: 30px;
-    border: 15px solid #ffffff;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .main-container {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 390px;
+    overflow: hidden;
 }
 
 .game-header {
+    width: 100%;
     text-align: center;
     font-size: 13px;
     text-transform: uppercase;
     font-family: "gilroy-blackItalic";
     color: #ffffff;
-    position: absolute;
     z-index: 100;
 }
 
@@ -48,5 +44,34 @@ body {
     background-color: #8760d4;
     border-radius: 97px;
     font-family: "gilroy-bold";
-    font-size: 16px;
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        width: 100%;
+    }
+
+    .game-header {
+        font-size: 3.5vw;
+    }
+
+    .btn-primary {
+        font-size: ;
+        padding: ;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    body {
+        width: 390px;
+        height: 844px;
+        margin: 30px auto;
+        border: 15px solid #ffffff;
+        border-radius: 10px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: ;
+    }
 }
