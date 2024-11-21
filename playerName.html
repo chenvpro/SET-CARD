@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width" />
         <title>LE VERDICT | PLAYERS NAME</title>
         <meta name="description" content="Séléction des noms des joueurs." />
-        <link rel="stylesheet" href="./css/fonts.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/playerName.css" />
+        <link id="reload-font" rel="stylesheet" href="./css/fonts.css" />
+        <link id="reload-style" rel="stylesheet" href="./css/style.css" />
+        <link id="reload-playerName" rel="stylesheet" href="./css/playerName.css" />
     </head>
     <body>
         <header class="game-header">
@@ -17,34 +17,40 @@
         <main class="main-container main-playerName">
             <p class="select-player-title">Indiquez le nom des joueurs 🕹️</p>
             <section class="section-add-player">
-                <article class="article-add-player">
-                    <input
-                        type="text"
-                        name="player1"
-                        id="player1"
-                        class="input-player"
-                        maxlength="20"
-                        title="20 charactères max"
-                        placeholder="Indiquer le joueur 1"
-                    />
-                    <button class="button-remove-player"><img src="images/close.png" alt="cross image" /></button>
-                </article>
-                <article class="article-add-player">
-                    <input
-                        type="text"
-                        name="player2"
-                        id="player2"
-                        class="input-player"
-                        maxlength="20"
-                        title="20 charactères max"
-                        placeholder="Indiquer le joueur 2"
-                    />
-                    <button class="button-remove-player"><img src="images/close.png" alt="cross image" /></button>
-                </article>
-                <button id="button-add-player">+</button>
+                <div class="all-player">
+                    <article class="article-add-player" id="article-player-1">
+                        <input
+                            type="text"
+                            name="player1"
+                            id="player1"
+                            class="input-player"
+                            maxlength="20"
+                            title="20 charactères max"
+                            placeholder="Indiquer le joueur 1"
+                        />
+                        <button class="button-remove-player" title="retirer un joueur"></button>
+                    </article>
+                    <article class="article-add-player" id="article-player-2">
+                        <input
+                            type="text"
+                            name="player2"
+                            id="player2"
+                            class="input-player"
+                            maxlength="20"
+                            title="20 charactères max"
+                            placeholder="Indiquer le joueur 2"
+                        />
+                        <button class="button-remove-player" title="retirer un joueur"></button>
+                    </article>
+                    <article class="article-add-player" id="article-player-3"></article>
+                    <article class="article-add-player" id="article-player-4"></article>
+                    <article class="article-add-player" id="article-player-5"></article>
+                </div>
+                <button id="button-add-player" title="ajouter un joueur">+</button>
             </section>
             <a class="btn-primary btn-start-game" href="gameStart.html">Commencer la partie</a>
             <img id="img2" src="./images/img2.png" alt="red-curve-band" />
         </main>
+        <script src="js/addPlayer.js"></script>
     </body>
 </html>

@@ -12,6 +12,13 @@
     gap: 17px;
 }
 
+.all-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
 .article-add-player {
     display: flex;
     align-items: center;
@@ -20,6 +27,7 @@
 
 .input-player {
     color: #000;
+    font-family: "gilroy-regular";
     border-radius: 30px;
     padding: 0 30px;
     border: 0;
@@ -56,6 +64,10 @@
         width: 100%;
     }
 
+    .all-player {
+        width: 100%;
+    }
+
     .article-add-player {
         width: 80%;
     }
@@ -68,6 +80,7 @@
     #button-add-player {
         width: 15vw;
         height: 15vw;
+        font-size: 100%;
     }
 
     .btn-start-game {
@@ -102,6 +115,7 @@
     .input-player {
         width: 236px;
         height: 56px;
+        font-size: 13px;
     }
 
     .button-remove-player {
