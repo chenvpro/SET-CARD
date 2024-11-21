@@ -8,15 +8,18 @@
 }
 
 @media screen and (max-width: 390px) {
-    .homepage-title {
+    .bottom {
         width: 80%;
+    }
+
+    .homepage-title {
+        width: 100%;
         font-size: 8vw;
     }
 
     .btn-launch-game {
-        position: relative;
-        left: -19%;
         margin-top: 50px;
+        width: fit-content;
     }
 }
 
