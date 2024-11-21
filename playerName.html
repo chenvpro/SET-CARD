@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
         <title>LE VERDICT | PLAYERS NAME</title>
         <meta name="description" content="Séléction des noms des joueurs." />
         <link rel="stylesheet" href="./css/fonts.css" />
@@ -16,24 +17,30 @@
         <main class="main-container">
             <p class="select-player-title">Indiquez le nom des joueurs 🕹️</p>
             <section class="section-add-player">
-                <input
-                    type="text"
-                    name="player1"
-                    id="player1"
-                    class="input-player"
-                    maxlength="20"
-                    title="20 charactères max"
-                    placeholder="Indiquer le joueur 1"
-                />
-                <input
-                    type="text"
-                    name="player2"
-                    id="player2"
-                    class="input-player"
-                    maxlength="20"
-                    title="20 charactères max"
-                    placeholder="Indiquer le joueur 2"
-                />
+                <article class="article-add-player">
+                    <input
+                        type="text"
+                        name="player1"
+                        id="player1"
+                        class="input-player"
+                        maxlength="20"
+                        title="20 charactères max"
+                        placeholder="Indiquer le joueur 1"
+                    />
+                    <button class="button-remove-player"><img src="images/close.png" alt="cross image" /></button>
+                </article>
+                <article class="article-add-player">
+                    <input
+                        type="text"
+                        name="player2"
+                        id="player2"
+                        class="input-player"
+                        maxlength="20"
+                        title="20 charactères max"
+                        placeholder="Indiquer le joueur 2"
+                    />
+                    <button class="button-remove-player"><img src="images/close.png" alt="cross image" /></button>
+                </article>
                 <button id="button-add-player">+</button>
             </section>
             <a class="btn-primary btn-start-game" href="">Commencer la partie</a>
