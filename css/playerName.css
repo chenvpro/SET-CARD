@@ -86,7 +86,7 @@
     .btn-start-game {
         width: fit-content;
         font-size: 4vw;
-        margin-top: 50%;
+        margin-top: 10%;
     }
 
     #img2 {
@@ -132,7 +132,7 @@
 
     .btn-start-game {
         position: absolute;
-        top: 587px;
+        top: 650px;
     }
 
     #img2 {
