@@ -47,6 +47,7 @@ body {
     background-color: #8760d4;
     border-radius: 97px;
     font-family: "gilroy-bold";
+    cursor: pointer;
 }
 
 @media screen and (max-width: 390px) {

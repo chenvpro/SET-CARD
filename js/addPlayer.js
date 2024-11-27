@@ -11,7 +11,7 @@ function addPlayer() {
     addInput.name = `player${nbPlayer}`;
     addInput.id = `${nbPlayer}`;
     addInput.className = "input-player";
-    addInput.maxlength = "20";
+    addInput.maxLength = "20";
     addInput.title = "20 charactères max";
     addInput.placeholder = `Indiquer le joueur ${nbPlayer}`;
 
@@ -55,10 +55,12 @@ function removePlayer() {
 
 // add player button function
 addPlayerButton.addEventListener("click", function () {
-    if (nbPlayer < 5) {
+    if (nbPlayer < 4) {
         addPlayer();
         removeButton();
     } else {
+        addPlayer();
+        removeButton();
         addPlayerButton.style.display = "none";
     }
 });
@@ -66,19 +68,17 @@ addPlayerButton.addEventListener("click", function () {
 function removeButton() {
     const input = document.getElementById(`${nbPlayer}`);
     const removeButton = document.getElementById(`remove-button${nbPlayer}`);
-    console.log(removeButton);
-    console.log(input);
-    console.log(nbPlayer);
     removeButton.addEventListener("click", function () {
         input.remove();
         const button = document.getElementsByTagName("button");
-        console.log(button);
         button[nbPlayer - 1].remove();
         if (nbPlayer > 3) {
             const previousButtonImg = document.querySelector(`#img-cross${nbPlayer - 1}`);
             previousButtonImg.style.display = "block";
         }
         removePlayer();
+        if (nbPlayer < 5) {
+            addPlayerButton.style.display = "block";
+        }
     });
-    addPlayerButton.style.display = "block";
 }
