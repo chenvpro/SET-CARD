@@ -1,5 +1,5 @@
 const btnStartGame = document.querySelector(".btn-start-game");
-const players = document.getElementsByClassName(".input-player");
+const players = document.getElementsByClassName("input-player");
 
 btnStartGame.addEventListener("click", function () {
     for (let player of players) {
